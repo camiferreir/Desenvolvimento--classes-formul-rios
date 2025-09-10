@@ -60,7 +60,7 @@ public class TelaPessoa extends javax.swing.JFrame {
 
         jLabel8.setText("CEP");
 
-        jLabel9.setText("Formulário");
+        jLabel9.setText("Formulário de Pessoa");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -93,11 +93,14 @@ public class TelaPessoa extends javax.swing.JFrame {
                     .addComponent(txtCEP, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE))
                 .addGap(76, 76, 76))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(195, 195, 195)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnSalvar)
-                    .addComponent(jLabel9))
-                .addContainerGap(213, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(195, 195, 195)
+                        .addComponent(btnSalvar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(176, 176, 176)
+                        .addComponent(jLabel9)))
+                .addContainerGap(193, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
